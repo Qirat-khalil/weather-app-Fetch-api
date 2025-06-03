@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <div class="head">
+            <input type="text" name="inp" id="inp" placeholder="Enter City Name">
+            <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+        <div class="weat" style="display: none;" >
+            <div class="location">
+                <div class="loccity">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <h4 id="cityname">lahore</h4>
+                </div>
+                <h5>Wed,27 Aug</h5>
+            </div>
+            <div class="weainfo">
+                <div class="weimg">
+                    <img src="image/rainy-removebg-preview.png" alt="" id="weatherimg">
+                </div>
+                <div class="temp1">
+                    <h1 id="temp">30 <sup>°C</sup></h1>
+                    <h3 id="weather">Light rain</h3>
+
+                </div>
+            </div>
+            <div class="weather-detail">
+                <div class="humid">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind">12km/H</span>
+                        <p>Wind-Speed</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="forcast">
+                <div class="forcast-item">
+                    <h4>05 Aug</h4>
+                    <img src="image/rainy-removebg-preview.png" alt="" id="weatherimg">
+                    <h4>25<sup>°C</sup></h4>
+                </div>
+
+                <div class="forcast-item">
+                    <h4>05 Aug</h4>
+                    <img src="image/rainy-removebg-preview.png" alt="" id="weatherimg">
+                    <h4>25<sup>°C</sup></h4>
+                </div>
+
+                <div class="forcast-item">
+                    <h4>05 Aug</h4>
+                    <img src="image/rainy-removebg-preview.png" alt="" id="weatherimg">
+                    <h4>25<sup>°C</sup></h4>
+                </div>
+
+                <div class="forcast-item">
+                    <h4>05 Aug</h4>
+                    <img src="image/rainy-removebg-preview.png" alt="" id="weatherimg">
+                    <h4>25<sup>°C</sup></h4>
+                </div>
+
+
+            </div> -->
+
+            
+
+        </div>
+
+           <div class="errorimg">
+            <h1>Search City Name</h1>
+                <img src="image/44.jpeg" alt="">
+
+            </div>
+
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
