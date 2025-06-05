@@ -8,7 +8,7 @@ let humid= document.getElementById("humidity");
 let windspeed = document.getElementById("wind");
 let weat = document.getElementById("weat");
 let cityname = document.getElementById("cityname")
-let error = document.querySelector("errorimg")
+let error = document.querySelector(".errorimg")
 
 
 
@@ -29,8 +29,20 @@ console.log(data);
 // if (weat.style.display === "none" || weat.style.display === "") {
 //   weat.style.display = "flex";
 // }
-errorimg.style.display= "none";
-weat.style.display= "flex";
+// errorimg.style.display= "none";
+// weat.style.display= "flex";
+
+
+//   if (data.cod === "404") {
+//       // ❌ City Not Found: show error image, hide weather
+//       error.style.display = "block";
+//       weat.style.display = "none";
+//       return;
+//    }
+
+//    // ✅ City Found: show weather, hide error
+//    error.style.display = "none";
+//    weat.style.display = "flex";
 
 
 tempera.innerHTML = `${Math.round(data.main.temp - 273.15)}°C`;
@@ -68,3 +80,22 @@ switch (data.weather[0].main.toLowerCase()) {
 
 }
 
+//   let lat = data.coord.lat;
+//    let lon = data.coord.lon;
+
+// let api_key = "adc2d8e05063a25d9a8879c131efafca";
+// let urldate = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${api_key}`;
+
+// fetch(urldate).then(function(res){
+//    return res.json()
+// }).then(function(data){
+//     data
+// })
+//  console.log("Forecast Data:", data);
+// let currentDate = new Date();
+// let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// let day = days[currentDate.getDay()];
+// let date = currentDate.getDate();
+// let month = currentDate.toLocaleString("default", { month: "short" });
+
+// document.querySelector(".forcast-item h4").innerHTML = `${day}, ${date} ${month}`;
